@@ -82,5 +82,10 @@
 
 
 ;; user-defined preferences
-(evil-mode 1)                     ;; enable evil on startup
 (menu-bar-mode -1)                ;; disable menu bar 
+
+;; evil
+;; https://github.com/emacs-evil/evil
+(setup 
+  (:package evil)
+  (evil-mode 1))
