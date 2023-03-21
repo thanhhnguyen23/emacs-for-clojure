@@ -6,7 +6,7 @@
 
 (tooltip-mode -1)                 ;; disable tooltips
 (tool-bar-mode -1)                ;; the toolbar is pretty ugly
-(scroll-bar-mode -1)              ;; disable visible scrollbar
+;;(scroll-bar-mode -1)              ;; disable visible scrollbar
 (blink-cursor-mode 0)             ;; turn off blinking cursor. distracting!
 (setq create-lockfiles nil)       ;; no need for ~ files when editing
 (fset 'yes-or-no-p 'y-or-n-p)     ;; changes all yes/no questions to y/n type
@@ -80,3 +80,7 @@
 ;; Some font suggestions:  https://www.creativebloq.com/features/the-best-monospace-fonts-for-coding
 ;; (set-face-attribute 'default nil :font "Fira Code")
 
+
+;; user-defined preferences
+(evil-mode 1)                     ;; enable evil on startup
+(menu-bar-mode -1)                ;; disable menu bar 
